@@ -1,0 +1,14 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs
+/build/WeChatToolbox_Complete
+/components/tools/__pycache__
+/components/__pycache__
+/config/__pycache__
+/dist
+/logs/2025-09-15
+/styles/__pycache__
+/utils/__pycache__
+/venv
