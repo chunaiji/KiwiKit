@@ -1,0 +1,15 @@
+重构计划：
+
+1. 所有转换器类中删除 _apply_converter_styles 方法的调用 - 已完成
+2. 删除所有 _apply_converter_styles 方法的实现，这些内容在 styles.widgets 模块中已经封装
+3. 需要清理的类：
+   - TimestampConverter - 已完成
+   - UnitConverter - 已完成
+   - TemperatureConverter - 已完成
+   - SpeedConverter - 已完成
+   - AreaVolumeConverter - 已完成
+   - AngleConverter - 已完成
+
+4. 移除旧样式方法，如 styled_group, enhanced_combo, primary_button, styled_input，因为这些已被全局样式类替代
+
+注意：在尝试搜索和替换字符串时遇到了"多重匹配"问题，这是因为多个转换器类使用了相似的样式代码。建议从头开始重新审查文件。
